@@ -4,13 +4,16 @@
     <meta charset="utf-8" />
     <title>sacred-ui storybook</title>
 
+    <!-- <script type="module" src="../vendor/lit-core.min.js"></script> -->
     <script type="module" src="../src/atoms/Accordion.js"></script>
+    <script type="module" src="../src/atoms/Card.js"></script>
     <script type="module" src="../src/atoms/Row.js"></script>
 
     <style>
       @font-face {
         font-family: 'GeistMono-Regular';
-        src: url('https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/996b00fb-4b7a-403d-8da2-ce2225450681.woff2') format('woff2');
+        /* src: url('https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/996b00fb-4b7a-403d-8da2-ce2225450681.woff2') format('woff2'); */
+        src: url('../static/geistmono-regular-996b00fb-4b7a-403d-8da2-ce2225450681.woff2') format('woff2');
       }
 
       :root,
@@ -150,6 +153,9 @@
         --color-white-4: rgba(255, 255, 255, 0.4);
       }
     </style>
+    <!-- <script type="importmap">
+      @importmap
+    </script> -->
   </head>
   <body>
     <div id="root">
@@ -157,6 +163,13 @@
         Accordion components are vertically stacked, expandable panels designed for efficient use of space in monospace-driven
         layouts, often inspired by classic terminal interfaces. Each panel consists of a header and its corresponding content
         area, allowing users to toggle between a condensed summary and detailed information.
+        <br/>
+        <br/>
+        <srcl-card title="EXAMPLE">
+          <srcl-accordion title="ACCORDION EXAMPLE">
+            There are two visions of America a half century from now. One is of a society more divided between the haves and the have-nots, a country in which the rich live in gated communities, send their children to expensive schools, and have access to first-rate medical care. Meanwhile, the rest live in a world marked by insecurity, at best mediocre education, and in effect rationed health care―they hope and pray they don't get seriously sick. At the bottom are millions of young people alienated and without hope. I have seen that picture in many developing countries; economists have given it a name, a dual economy, two societies living side by side, but hardly knowing each other, hardly imagining what life is like for the other. Whether we will fall to the depths of some countries, where the gates grow higher and the societies split farther and farther apart, I do not know. It is, however, the nightmare towards which we are slowly marching.
+          </srcl-accordion>
+        </srcl-card>
       </srcl-accordion>
     </div>
   </body>

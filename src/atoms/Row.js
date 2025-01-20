@@ -1,5 +1,5 @@
-import { LitElement, html, css } from 'https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js';
-import { withTwind } from '../util/twind.config.js';
+import { LitElement, html, css } from '../../static/lit-core.min.js';
+// import { withTwind } from '../util/twind.config.js';
 
 export class Row extends LitElement {
   static styles = css`
